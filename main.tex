@@ -8,17 +8,23 @@
 \addbibresource{Mendeley.bib}
 \usepackage[compatibility=false]{caption}
 \usepackage{subcaption}
+\usepackage[section]{placeins}
+
+\renewcommand{\rmdefault}{ptm}
+\usepackage{titlesec}
+\titleformat{\section}[runin]{\normalfont\bfseries}{\thesection}{1em}{}
 
 \title{NSF GRFP Research Statement}
 \author{Matthew Moreno}
 
 \begin{document}
 \begin{center}
-{ \Large
+{
  \textbf{Selecting for Irregular Refinement Potential in Artificial Neural Networks}
 }
 \end{center}
 \vspace{-4ex}
+\doublespacing
 
 \input{tex/introduction.tex}
 
@@ -30,17 +36,12 @@
 
 \input{tex/broader_impact.tex}
 
-\doublespacing
+\input{tex/appendix.tex}
 
 %\input{tex/motivation.tex}
 
 %\input{tex/background.tex}
 
 %\input{tex/topic.tex}
-
-\clearpage
-\printbibliography
-
-
 
 \end{document}
