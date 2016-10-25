@@ -1,18 +1,24 @@
-\documentclass[a4paper]{article}
+\documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper, total={6.5in, 9.5in}]{geometry}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{setspace}
-\usepackage{biblatex}
+\usepackage[autocite = superscript]{biblatex}
 \addbibresource{Mendeley.bib}
 \usepackage[compatibility=false]{caption}
 \usepackage{subcaption}
 \usepackage[section]{placeins}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=0pt}
+\setlist[enumerate]{noitemsep, topsep=0pt}
 
 \renewcommand{\rmdefault}{ptm}
-\usepackage{titlesec}
-\titleformat{\section}[runin]{\normalfont\bfseries}{\thesection}{1em}{}
+\usepackage[compact]{titlesec}
+\titleformat{\section}[runin]{\normalfont\bfseries}{}{0pt}{}[\kern 1pc]
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+
+\usepackage{footmisc}
 
 \title{NSF GRFP Research Statement}
 \author{Matthew Moreno}
@@ -20,13 +26,16 @@
 \begin{document}
 \begin{center}
 {
- \textbf{Selecting for Irregular Refinement Potential in Artificial Neural Networks}
+ \textbf{Selecting for Irregular Refinement Potential in Evolving Artificial Neural Networks}
 }
 \end{center}
-\vspace{-4ex}
-\doublespacing
+\vspace{-2.2ex}
 
-\input{tex/introduction.tex}
+\input{tex/summary.tex}
+
+\input{tex/background.tex}
+
+\input{tex/motivation.tex}
 
 \input{tex/research_plan.tex}
 
@@ -36,12 +45,15 @@
 
 \input{tex/broader_impact.tex}
 
-\input{tex/appendix.tex}
+\input{tex/bibliography.tex}
+
+%\input{tex/appendix.tex}
 
 %\input{tex/motivation.tex}
 
 %\input{tex/background.tex}
 
 %\input{tex/topic.tex}
+
 
 \end{document}
