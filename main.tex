@@ -4,7 +4,7 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{setspace}
-\usepackage[autocite = superscript]{biblatex}
+\usepackage[autocite = superscript,style = nature]{biblatex}
 \addbibresource{Mendeley.bib}
 \usepackage[compatibility=false]{caption}
 \usepackage{subcaption}
@@ -15,7 +15,7 @@
 
 \renewcommand{\rmdefault}{ptm}
 \usepackage[compact]{titlesec}
-\titleformat{\section}[runin]{\normalfont\bfseries}{}{0pt}{}[\kern 1pc]
+\titleformat{\section}[runin]{\normalfont\bfseries}{}{0pt}{}[.\kern 1pc]
 \titlespacing*{\section}{0pt}{0pt}{0pt}
 
 \usepackage{footmisc}
@@ -24,9 +24,10 @@
 \author{Matthew Moreno}
 
 \begin{document}
+
 \begin{center}
 {
- \textbf{Selecting for Irregular Refinement Potential in Evolving Artificial Neural Networks}
+ \textbf{Promoting Irregular Refinement Potential in Evolving Artificial Neural Networks}
 }
 \end{center}
 \vspace{-2.2ex}
@@ -41,9 +42,11 @@
 
 \input{tex/expected_results.tex}
 
-\input{tex/intellectual_merit.tex}
+\input{tex/impact.tex}
 
-\input{tex/broader_impact.tex}
+% \input{tex/intellectual_merit.tex}
+
+% \input{tex/broader_impact.tex}
 
 \input{tex/bibliography.tex}
 
