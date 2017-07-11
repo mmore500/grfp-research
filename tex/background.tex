@@ -1,13 +1,16 @@
 \section{Background}
 
-Neuroevolution aims to design ANN topologies and weighting schemes through repeated evaluation, selection, and recombination of candidate solutions, an algorithm inspired by biological evolution.
+Artificial neuroevolution employs repeated evaluation, selection, and recombination of candidate solutions to design ANN topologies and weighting schemes to perform a particular task.
 In the biological metaphor, candidate solutions have a phenotype (an ANN configuration that evolutionary selection acts upon) and a genotype (information that recombination and mutation act on and from which the phenotype is constructed).
 
 Direct genetic encodings, where each phenotypic trait is stored verbatim in the genome, allow fine-toothed exploration of the evolutionary search space.
 Conversely, indirect genetic encodings, where genetic information is expanded via a process that allows for reuse of that information to uniformly describe many phenotypic characteristics, biases evolutionary search towards phenotypic regularity.\autocite{Clune2011OnRegularity}
 As a result of this bias towards regularity, in highly regular problem domains indirect genetic encoding outperforms direct genetic encoding.\autocite{Clune2011OnRegularity}
-Nevertheless, most problem domains exhibit some irregularity, which can often only be exploited by irregular phenotypic structures; experimental evidence indicates that champion solutions evolved with indirect genetic encodings be made more fit by irregular refinement vis-\`a-vis direct encoded evolutionary search.\autocite{Clune2011OnRegularity}
+Nevertheless, most problem domains exhibit some irregularity, which can often only be exploited by irregular phenotypic structures;
+experimental evidence indicates that the perfonce of networks evolved with indirect genetic encodings be further improved by irregular refinement through direct encoded evolutionary search.\autocite{Clune2011OnRegularity}
 
-Learning, a type of phenotypic plasticity that provides another route to irregular refinement,\autocite{Clune2011OnRegularity} is thought to bias evolutionary search towards discovering useful adaptation through a mechanism known as the Baldwin effect.\autocite{Downing2010TheNetworks}
+In biological neuroevoultion, environmental influence on the phenotype performs irregular refinement.\autocite{Clune2011OnRegularity}
+In the process of learning, environmental signals beget tweaks to neural configuration that support succesful behavior.
+This plasticity is thought to bias evolutionary search towards discovering useful adaptation through a mechanism known as the Baldwin effect.\autocite{Downing2010TheNetworks}
 By allowing a candidate solution to assume proximal phenotypic forms, learning enables evolutionary selection to act on information about a candidate solution's local phenotypic neighborhood.
 Through selective pressure for phenotypes proximal to high-fitness phenotypic forms, local phenotypic search ``buys evolutionary time'' until heritable scaffolding arises to support phenotypic adaptation originally attained via plasticity.\autocite{Downing2010TheNetworks}
