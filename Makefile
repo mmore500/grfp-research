@@ -4,6 +4,9 @@ BUILD_DIR := $(shell basename $(abspath $(dir $(lastword $(MAKEFILE_LIST)))))
 
 all: ${BUILD_DIR}.pdf
 
+view:
+	atom ${BUILD_DIR}.pdf
+
 ${BUILD_DIR}.pdf: main.tex
 	latexmk -pdf -silent \
     -jobname=${BUILD_DIR} \
