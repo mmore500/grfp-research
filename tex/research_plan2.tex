@@ -6,7 +6,7 @@ the X that parses activity statistics to make decisions about pruning
 
 Small scale experiment
 
-use DeepNEAT to generate a large neural net
+use HyperNEAT to generate a large neural net
 
 while training, log the following for each neuron
 \begin{itemize}
@@ -18,6 +18,11 @@ while training, log the following for each neuron
 \item average weight out, number of weights out
 \item magnitude of backprop gradient through the neuron
 \end{itemize}
+
+genetic algorithm to evolve a vector of first order interactions parameters used to decide whether to prune or not
+
+
+\autocite{song2015learning} report that looking at weight magnitudes alone was sufficient to prune networks without
 
 every $n$ training iterations,
 go through and remove each neuron that meets the criteria for removal
