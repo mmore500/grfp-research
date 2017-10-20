@@ -1,38 +1,27 @@
 \section{Introduction}
 
 Deep learning has provided computational means to address previously intractable tasks such as image classification and automated language translation.
-The weights of connections between nodes are learned via backpropagation.
-Designing model architectures, define, is essential to achieving good performance with deep learning techniques.
-Designing an appropriate model architecture is a challenging and time-consuming task that requires extensive machine learning expertise and trial-and-error work.
+This technique uses large quantities of data to optimize the connection weights of artificial neural networks (ANNs), typically via backpropagation.
+Designing an appropriate model architecture (the pattern of connectivity between artificial neurons) is a time-consuming trial-and-error process that requires extensive machine learning expertise.
 This task bottlenecks rollout of deep learning to commercial and industrial applications.
 
 Recent work has focused on automating deep learning architecture design.
 Among other approaches, evolutionary algorithms have been proposed as a means to automatically design deep learning architectures.
 This technique employs repeated evaluation, selection, and recombination of a population of candidate architectures to develop high-performance deep learning architectures.
-Researchers at Google Brain\autocite{real2017large} and Sentient Technologies\autocite{miikkulainen2017evolving} report that evolved deep learning architectures rival state-of-the-art hand-designed architectures on benchmark datasets such as CIFAR-10.
+Researchers at Google Brain\autocite{real2017large} and Sentient Technologies\autocite{miikkulainen2017evolving} report that evolved deep learning architectures rival state-of-the-art hand-designed architectures on benchmark datasets.
 
 In this existing work, plasticity (changes to an individual network in response to training data) is limited to connection weights;
 network architecture is adjusted only by mutation, not during the training process in response to training data.
-In contrast, biological neural networks are characterized by a paradigm of \textit{exploratory growth} in which architectural subcomponents progressively unfold in a manner responsive to environmental stimulus and the activity of other subcomponents.\autocite{downing2015intelligence}
-In particular, the nerodevelopmental theory of neuronal group selection (NGS) posits development generates an excess of neuron subnetworks, of which only those that successfully integrate into overall brain functionality are retained.\autocite{sanes2011development}
-Artificial neural networks are amenable to analogous pruning;
-researchers have demonstrated node and connection removal techniques mirroring NGS that reduce the parameter count of a model by an entire order of magnitude without incurring accuracy loss.\autocite{song2015learning}
+In contrast, biological neural networks develop in a manner responsive to environmental stimulus and the activity of other subcomponents.
+This paradigm is hypothesized to enhance a network's robustness to mutation and potential for plastic adaptation to environmental conditions.\autocite{downing2015intelligence}
+The theory of neuronal group selection (NGS) posits that developing animals generate an excess of neural subnetworks, of which only those that successfully integrate into overall brain functionality are retained.\autocite{sanes2011development}
+Artificial neural networks are amenable to an analogous pruning;
+researchers have demonstrated node and connection removal techniques mirroring NGS that can reduce the parameter count of a model by an entire order of magnitude without incurring accuracy loss.\autocite{song2015learning}
 
-Incorporating NGS in development programs for deep learning architectures provides dual benefits.
-First, because under NGS neural pruning is performed based on the network activity, robustness is ensured as architectural subcomponents adapt to any altered context induced by mutation.
-Thus, NGS reduces the frequency of severe deleterious outcomes under mutation and allows evolution freer manipulation of individual architectural components \autocite{downing2015intelligence}.
-As NGS pruning decisions are made based on network activity in response to particular training data, this robustness extends to exposure to new datasets.
-
-Additionally, NGS allows for irregular enhancement of neural architecture.
-Large-scale artificial neuroevolution largely relies on indirect encoding schemes, where genetic information is expanded via a process that allows for reuse of that information to uniformly describe many phenotypic characteristics.
+Large-scale artificial neuroevolution relies on indirect encoding schemes, where genetic information is expanded to construct an artificial neural network (ANN) via a process that allows for reuse of that information to uniformly describe many phenotypic characteristics.
 (This is as opposed to direct genetic encodings, where each phenotypic trait is stored verbatim in the genome).
-The use of indirect encodings biases evolutionary search towards phenotypic regularity but prevents fine-toothed exploration of the evolutionary search space.
-It has been shown that in situations where indirect encoding outperforms direct encoding, even better performance can be achieved by first doing indirect encoding then performing subsequent refinement using a direct encoding.
-This refinement reduces the regularity of the solution, allowing for irregular optimization that was prevented by the constraints of the indirect encoding.
-Incorporating NGS into evolution of neural architectures will allow for architectural refinements otherwise inaccessible to evolutionary search due to the constraints of the indirect encoding, thus enabling even greater architectural performance.
+The use of indirect encodings biases evolutionary search towards phenotypic regularity, which is useful in many problem domains.
+However, indirectly-encoded ANNs can often be further optimized through irregular refinements that were inhibited by the constraints of the indirect encoding \cite{clune2011performance}.
+By pruning away nodes based on network activity patterns, NGS provides a potential avenue for such irregular refinement.
 
-By increasing the network evolvability and allowing for irregular enhancement, it is hoped that techniques based on NGS will enable the evolution of even better deep learning architectures.
-By rapidly pruning the architecture and reducing the frequency of severely deleterious mutational outcomes, it is also hoped that greater computational efficiency can be attained.
-Currently evolutionary techniques require astronomical, and generally prohibitive, computational cost.
-Real et al. report using on the order of $2 \times 10^{20}$ FLOPS.
-Reducing computational cost will democratize the evolution of !
+By increasing robustness to mutation, enabling irregular refinement, pruning model parameters, and permitting architectural plasticity in response to the training process, exploiting NGS in evolutionary algorithms for deep learning architectures has the potential to yield more effective, compact, and versatile deep learning architecture at less computational cost than existing approaches.
