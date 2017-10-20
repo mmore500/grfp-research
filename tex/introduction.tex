@@ -1,0 +1,55 @@
+Deep learning has provided computational means to address previously intractable tasks such as image classification and automated language translation.
+The weights of connections between nodes are learned via backpropagation.
+Designing model architectures, define, is essential to achieving good performance with deep learning techniques.
+Designing an appropriate model architecture is a challenging and time-consuming task that requires extensive machine learning expertise and trial-and-error work.
+This task bottlenecks rollout of deep learning to commercial and industrial applications.
+
+Recent work has focused on automating deep learning architecture design.
+Among other approaches, evolutionary algorithms have been proposed as a means to automatically design deep learning architectures.
+This technique employs repeated evaluation, selection, and recombination of a population of candidate architectures to develop high-performance deep learning architectures.
+Researchers at Google Brain and Sentient Technologies report that evolved deep learning architectures rival state-of-the-art hand-designed architectures on benchmark datasets such as CIFAR-10.
+
+In existing work, plasticity (changes to an individual network in response to training data) is limited to connection weights \cite{miikkulainen2017evolving, real2017large};
+network architecture is adjusted only by mutation, not during the training process in response to training data.
+In contrast, biological neural networks are characterized by a paradigm of \textit{exploratory growth} in which architectural subcomponents progressively unfold in a manner responsive to environmental stimulus and the activity of other subcomponents \cite{downing2015intelligence}.
+\cite{sanes2011development}
+In particular, the theory of neuronal group selection posits development generates an excess of neuron subnetworks, of which only those that successfully integrate into overall brain functionality are retained.
+Indeed, pruning  has been demonstrated to be able to condense and actually improve the performance of ANN and is a commonly used technique today \cite{wen2016learning}
+
+
+Miikulainen et al.
+
+
+
+Real et al.
+
+\cite{real2017large}
+
+These
+As the evaluation of candidate architectures requires extensive training via backpropagation, evolutionary techniques are extremely computationally expensive.
+Real et al. report using on the order of $10^{20}$ FLOPS.
+
+In particula Google Brain and Sentient Technologies.
+
+Researchers at
+  evolutionary algorithms [Real, 2017]; [Miikkulainen], and machine learning techniques [Quoc, Le].
+The Google technique somewhat approximates developmental plasticity in that learned weights are inherited.
+However, mutation operators are applied naively... this approach will evolve criteria to make architectural changes more systematically.
+
+
+
+In these algorithm, a population of candidate individuals...
+
+What does exploratory growth get you?
+\begin{itemize}
+\item Irregular enhancement (Clune) --- indirect encodings (i.e. DeepNEAT) generate regular configurations that scale better than direct encodings, but can be further enhanced by irregular refinement
+\item Evolvability (Downing) --- exploratory growth adapts components of the network to changes in other components, reducing the frequency/severity of deleterious outcomes
+\end{itemize}
+
+What does that translate to?
+\begin{itemize}
+Existing evolutionary techniques require astronomical, and generally prohibitive, computational cost.
+Real et al. report using on the order of $2 \times 10^{20}$ FLOPS.
+\item greater evolvability leads to more efficient evolution, democratizing the approach
+\item more effective evolution, especially at even larger scales than existing work
+\end{itemize}
