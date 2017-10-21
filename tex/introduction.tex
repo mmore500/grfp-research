@@ -6,22 +6,21 @@ Designing an appropriate model architecture (the pattern of connectivity between
 This task bottlenecks rollout of deep learning to commercial and industrial applications.
 
 Recent work has focused on automating deep learning architecture design.
-Among other approaches, evolutionary algorithms have been proposed as a means to automatically design deep learning architectures.
-This technique employs repeated evaluation, selection, and recombination of a population of candidate architectures to develop high-performance deep learning architectures.
-Researchers at Google Brain\autocite{real2017large} and Sentient Technologies\autocite{miikkulainen2017evolving} report that evolved deep learning architectures rival state-of-the-art hand-designed architectures on benchmark datasets.
+Researchers at Google\autocite{real2017large} and Sentient\autocite{miikkulainen2017evolving} have successfully employed evolutionary algorithms to automatically design deep learning architectures, reporting performance that rivals state-of-the-art.
+This technique employs repeated evaluation, selection, and recombination of a population of candidate architectures to yield deep learning architectures that can be trained effectively.
 
 In this existing work, plasticity (changes to an individual network in response to training data) is limited to connection weights;
 network architecture is adjusted only by mutation, not during the training process in response to training data.
 In contrast, biological neural networks develop in a manner responsive to environmental stimulus and the activity of other subcomponents.
 This paradigm is hypothesized to enhance a network's robustness to mutation and potential for plastic adaptation to environmental conditions.\autocite{downing2015intelligence}
-The theory of neuronal group selection (NGS) posits that developing animals generate an excess of neural subnetworks, of which only those that successfully integrate into overall brain functionality are retained.\autocite{sanes2011development}
+The theory of neuronal group selection (NGS) posits that development generates an excess of neural subnetworks, of which only those that successfully integrate into overall brain functionality are retained.\autocite{sanes2011development}
 Artificial neural networks are amenable to an analogous pruning;
 researchers have demonstrated node and connection removal techniques mirroring NGS that can reduce the parameter count of a model by an entire order of magnitude without incurring accuracy loss.\autocite{song2015learning}
 
 Large-scale artificial neuroevolution relies on indirect encoding schemes, where genetic information is expanded to construct an artificial neural network (ANN) via a process that allows for reuse of that information to uniformly describe many phenotypic characteristics.
 (This is as opposed to direct genetic encodings, where each phenotypic trait is stored verbatim in the genome).
 The use of indirect encodings biases evolutionary search towards phenotypic regularity, which is useful in many problem domains.
-However, indirectly-encoded ANNs can often be further optimized through irregular refinements that were inhibited by the constraints of the indirect encoding \cite{clune2011performance}.
+However, indirectly-encoded ANNs can often be further optimized through irregular refinements that were inhibited by the constraints of the indirect encoding.\autocite{clune2011performance}
 By pruning away nodes based on network activity patterns, NGS provides a potential avenue for such irregular refinement.
 
-By increasing robustness to mutation, enabling irregular refinement, pruning model parameters, and permitting architectural plasticity in response to the training process, exploiting NGS in evolutionary algorithms for deep learning architectures has the potential to yield more effective, compact, and versatile deep learning architecture at less computational cost than existing approaches.
+By increasing robustness to mutation, enabling irregular refinement, pruning model parameters, and permitting architectural plasticity in response to the training process, exploiting NGS in evolutionary algorithms for deep learning architectures has the potential to increase the effectives, compactness, and versatility of generated architectures and reduce computational cost.

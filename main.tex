@@ -9,7 +9,7 @@
 \usepackage[compatibility=false]{caption}
 \usepackage{subcaption}
 \usepackage[section]{placeins}
-\usepackage{enumitem}
+\usepackage[inline]{enumitem}
 \setlist[itemize]{noitemsep, topsep=0pt}
 \setlist[enumerate]{noitemsep, topsep=0pt}
 
@@ -23,11 +23,20 @@
 \title{NSF GRFP Research Statement}
 \author{Matthew Moreno}
 
+% \usepackage{ragged2e}
+% \setlength{\RaggedRightParindent}{\parindent}
+%
+%
+% \hyphenpenalty=10000
+% \exhyphenpenalty=10000
+\raggedright
+\setlength{\parindent}{2em} 
+
 \begin{document}
 
 \begin{center}
 {
- \textbf{Promoting Irregular Refinement Potential in Evolving Artificial Neural Networks}
+ \textbf{Exploiting Developmental Plasticity in the Evolution of Deep Learning Architectures}
 }
 \end{center}
 \vspace{-2.2ex}
@@ -36,13 +45,12 @@
 
 \input{tex/introduction.tex}
 
-\input{tex/research_plan2.tex}
+\input{tex/research_plan.tex}
 
-\input{tex/expected_results.tex}
+\input{tex/intellectual_merit.tex}
 
 \input{tex/impact.tex}
 
 \input{tex/bibliography.tex}
-
 
 \end{document}
