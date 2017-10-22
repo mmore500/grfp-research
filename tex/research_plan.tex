@@ -33,12 +33,12 @@ Following pruning, training will resume for a fixed number of iterations. Candid
 \section{Research Plan}
 
 First, I will conduct \textbf{exploratory experiments to assess the capacity of NGS to promote parsimony, irregular refinement, evolvability, and adaptive plasticity} at the Michigan State University High Performance Computing Center.
-For these experiments, I will use the HyperNEAT encoding,\autocite{clune2011performance} a standard indirect encoding for artificial neuroevolution, to evolve ANN architectures for a variant of the bit mirroring problem.
-This problem domain is designed to enable experimental manipulation of symmetry in the problem domain.
+For these experiments, I will use the HyperNEAT encoding,\autocite{clune2011performance} a standard indirect encoding for artificial neuroevolution.
+I will evolve ANN architectures for a variant of the bit mirroring problem, which is designed to enable experimental manipulation of symmetry in the problem domain.
 The capacity of NGS to enable irregular refinement will be assessed by comparing NGS-HyperNEAT and control (i.e. HyperNEAT) performance across a spectrum of problem regularities.
 Greater relative performance of NGS-HyperNEAT at low problem regularity would confirm that NGS enables irregular refinement.
 I will assess the impact of NGS on evolvability by comparing between NGS and control treatments the phenotypic novelty and viability of mutant offspring of evolved architectures and the rate at which evolving populations adapt to altered evolutionary objectives.\autocite{tarapore2015evolvability}
-I will test the impact of NGS on adaptive plasticity by comparing between NGS and control treatments the performance of architectures on a bit mirroring problem with different symmetries than that for which they were evolved.
+I will test the impact of NGS on adaptive plasticity by comparing between NGS and control treatments the ability of architectures evolved to handle one set of bit mirroring symmetries to perform on a bit mirroring problem with different symmetries.
 Finally, I will compare the impact of parsimony selection pressure on performance and network size for NGS and control treatments.
 I expect NGS to boost parsimony, irregular refinement, evolvability, and adaptive plasticity.
 
