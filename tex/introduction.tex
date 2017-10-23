@@ -4,19 +4,19 @@ Deep learning has provided computational means to address previously intractable
 Deep learning uses large quantities of data to train the connection weights of artificial neural networks (ANNs).
 Unfortunately, the extensive machine learning expertise required to design model architectures (the pattern of connectivity between artificial neurons) has bottlenecked rollout of deep learning to commercial and industrial applications.
 
-Researchers at Google\autocite{real2017large} and Sentient\autocite{miikkulainen2017evolving} have successfully used \textbf{evolutionary algorithms to automatically design deep learning architectures}, reporting performance that rivals state-of-the-art.
+Researchers at Google \cite{real2017large} and Sentient \cite{miikkulainen2017evolving} have successfully used \textbf{evolutionary algorithms to automatically design deep learning architectures}, reporting performance that rivals state-of-the-art.
 This technique evolves architectures that can be trained effectively through repeated evaluation, selection, and recombination of a population of candidate architectures.
 
 In this existing work, plasticity (changes to an individual network in response to training data) is limited to connection weights;
 network architecture is adjusted only by mutation.
 In contrast, biological neural subnetworks develop in a manner responsive to environmental stimulus and the activity of other subnetworks.
-The theory of \textbf{neuronal group selection (NGS)} posits that development generates an excess of neural subnetworks, of which only those that successfully integrate into overall brain functionality are retained.\autocite{sanes2011development}
-This paradigm is hypothesized to \textbf{enhance robustness to mutation and plastic adaptation to environmental conditions}.\autocite{downing2015intelligence}
-In deep learning models, node and connection removal techniques mirroring NGS have been used to shrink parameter count by an entire order of magnitude without incurring accuracy loss.\autocite{song2015learning}
+The theory of \textbf{neuronal group selection (NGS)} posits that development generates an excess of neural subnetworks, of which only those that successfully integrate into overall brain functionality are retained \cite{sanes2011development}.
+This paradigm is hypothesized to \textbf{enhance robustness to mutation and plastic adaptation to environmental conditions} \cite{downing2015intelligence}.
+In deep learning models, node and connection removal techniques mirroring NGS have been used to shrink parameter count by an entire order of magnitude without incurring accuracy loss \cite{song2015learning}.
 
 Large-scale artificial neuroevolution relies on indirect genetic encoding schemes that define an algorithm to construct an ANN instead of directly specifying individual connections.
 Indirectly encodings generate ANNs with recurring structures and symmetries, which are useful in many problem domains.
-However, indirect-encoded ANN performance can often be improved through irregular refinements that were inhibited by the constraints of the indirect encoding.\autocite{clune2011performance}
+However, indirect-encoded ANN performance can often be improved through irregular refinements that were inhibited by the constraints of the indirect encoding \cite{clune2011performance}.
 By pruning away nodes based on network activity patterns, \textbf{NGS provides a potential avenue for such irregular refinement}.
 
 By increasing robustness to mutation, enabling irregular refinement, pruning model parameters, and permitting architectural plasticity in response to the training process, exploiting NGS in evolutionary algorithms for deep learning architectures has the potential to \textbf{increase the effectives, compactness, and versatility of generated architectures while reducing computational cost}.
