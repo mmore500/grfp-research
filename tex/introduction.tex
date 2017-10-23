@@ -4,7 +4,7 @@ Deep learning has provided computational means to address previously intractable
 Deep learning uses large quantities of data to train the connection weights of artificial neural networks (ANNs).
 Unfortunately, the extensive machine learning expertise required to design model architectures (the pattern of connectivity between artificial neurons) has bottlenecked rollout of deep learning to commercial and industrial applications.
 
-Researchers at Google \cite{real2017large} and Sentient \cite{miikkulainen2017evolving} have successfully used \textbf{evolutionary algorithms to automatically design deep learning architectures}, reporting performance that rivals state-of-the-art.
+Researchers at Google \cite{real2017large} and Sentient \cite{miikkulainen2017evolving} have successfully used \textbf{evolutionary algorithms to automatically design deep learning architectures}, reporting state-of-the-art performance.
 This technique evolves architectures that can be trained effectively through repeated evaluation, selection, and recombination of a population of candidate architectures.
 
 In this existing work, plasticity (changes to an individual network in response to training data) is limited to connection weights;
@@ -15,7 +15,7 @@ This paradigm is hypothesized to \textbf{enhance robustness to mutation and plas
 In deep learning models, node and connection removal techniques mirroring NGS have been used to shrink parameter count by an entire order of magnitude without incurring accuracy loss \cite{song2015learning}.
 
 Large-scale artificial neuroevolution relies on indirect genetic encoding schemes that define an algorithm to construct an ANN instead of directly specifying individual connections.
-Indirectly encodings generate ANNs with recurring structures and symmetries, which are useful in many problem domains.
+Indirect encodings generate ANNs with recurring structures and symmetries, which are useful in many problem domains.
 However, indirect-encoded ANN performance can often be improved through irregular refinements that were inhibited by the constraints of the indirect encoding \cite{clune2011performance}.
 By pruning away nodes based on network activity patterns, \textbf{NGS provides a potential avenue for such irregular refinement}.
 

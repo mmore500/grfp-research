@@ -1,17 +1,3 @@
-\noindent
-\begin{minipage}{0.8\textwidth}
- \includegraphics[width=\textwidth]{img/complete}
-\end{minipage}%
-\begin{minipage}{0.2\textwidth}
-  {\setstretch{0.7}
-  \begin{footnotesize}
-    \textit{
-   Figure 1: A schematic comparison of a candidate NGS solution (top) with a candidate solution under existing methods (bottom).
-   }
-  \end{footnotesize}
-  \par}
-\end{minipage}
-
 \section{Implementation}
 
 Under the NGS regime, candidate solutions will consist of two components:
@@ -31,6 +17,20 @@ Then, a pruning decision will be made for each network node by comparing a cutof
 Following pruning, training will resume for a fixed number of iterations. Candidate solution fitness will be assessed as the validation set performance of the final trained network.
 Figure 1 compares NGS with existing methods.
 
+\noindent
+\begin{minipage}{0.8\textwidth}
+ \includegraphics[width=\textwidth]{img/complete}
+\end{minipage}%
+\begin{minipage}{0.2\textwidth}
+  {\setstretch{0.7}
+  \begin{footnotesize}
+    \textit{
+   Figure 1: A schematic comparison of a candidate NGS solution (top) with a candidate solution under existing methods (bottom).
+   }
+  \end{footnotesize}
+  \par}
+\end{minipage}
+
 \section{Research Plan}
 
 First, I will conduct \textbf{exploratory experiments to assess the capacity of NGS to promote parsimony, irregular refinement, evolvability, and adaptive plasticity} at the Michigan State University High Performance Computing Center.
@@ -44,7 +44,7 @@ Finally, I will compare the impact of parsimony selection pressure on performanc
 I expect NGS to boost parsimony, irregular refinement, evolvability, and adaptive plasticity.
 
 Next, I will \textbf{assess the performance of NGS-enabled architecture evolution on benchmark deep learning datasets}.
-I will leverage the results of my exploratory experiments to \textbf{seek collaborators in industry} for these experiments, in particular through connections between my research group and Sentient.
+I will leverage the results of my exploratory experiments to \textbf{seek collaborators in industry} for these benchmarking experiments through connections between my research group and Sentient.
 These experiments will employ the CoDeepNEAT encoding \cite{miikkulainen2017evolving}, an indirect encoding developed specially to evolve deep learning architectures.
 I will benchmark NGS-CoDeepNEAT against existing results for CoDeepNEAT on datasets for computer vision (CIFAR-10/100) and language modeling (PTB).
 I expect performance to meet or exceed state-of-the-art.
