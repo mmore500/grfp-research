@@ -9,10 +9,10 @@ In existing work, plasticity (changes to an ANN in response to training data) is
 network architecture is adjusted only by mutation.
 In contrast, biological neural subnetworks develop in a manner responsive to environmental stimulus and the activity of other subnetworks.
 The theory of \textbf{neuronal group selection (NGS)} posits that development generates an excess of neural subnetworks, of which only those that successfully integrate into overall brain functionality are retained \cite{sanes2011development}.
-This paradigm is hypothesized to \textbf{enhance plastic adaptation to environmental conditions and robustness to mutation} \cite{downing2015intelligence}.
+This paradigm is hypothesized to \textbf{enhance plastic adaptation to environmental conditions and enhance robustness to mutation} \cite{downing2015intelligence}.
 In deep learning models, node and connection removal techniques mirroring NGS have been used to shrink parameter count by an entire order of magnitude without incurring accuracy loss \cite{song2015learning}.
 
-Large-scale artificial neuroevolution relies on indirect genetic encoding schemes that define an algorithm to construct an ANN instead of directly specifying individual connections.
+Large-scale artificial neuroevolution relies on indirect genetic encoding schemes that define an algorithm that constructs an ANN instead of directly specifying individual connections.
 Indirect encodings generate ANNs with recurring structures and symmetries, which are useful in many problem domains.
 However, indirect-encoded ANN performance can often be improved through irregular refinements that were inhibited by the constraints of the indirect encoding \cite{clune2011performance}.
 By pruning away nodes based on network activity patterns, \textbf{NGS provides a potential avenue for such irregular refinement}.
