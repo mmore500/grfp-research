@@ -43,23 +43,23 @@ Figure 1 compares NGS with existing methods.
 \section{Research Plan}
 
 First, I will conduct \textbf{exploratory experiments to assess the capacity of NGS to promote irregular refinement, evolvability, adaptive plasticity, and parsimony} at the Michigan State University High Performance Computing Center.
-For these experiments, I will use the HyperNEAT encoding, a standard indirect artificial neuroevolution encoding \cite{clune2011performance}.
+For these experiments, I will use HyperNEAT, a standard indirect artificial neuroevolution encoding scheme \cite{clune2011performance}.
 These experiments will assess four variants of the NGS algorithm with
 \begin{enumerate*}[label=(\alph*)]
 \item single or multiple pruning passes and
 \item pruning performed on nodes or connections.
 \end{enumerate*}
-I will evolve ANN architectures for a variant of the bit mirroring problem, which is designed to enable experimental manipulation of symmetry in the problem domain.
-I will assess the capacity of NGS to enable irregular refinement by comparing NGS-HyperNEAT variants and control (i.e. HyperNEAT) performance across a spectrum of problem regularities.
+I will evolve ANN architectures for a variant of the bit mirroring problem, which is designed to enable experimental manipulation of symmetry in the problem domain \cite{clune2011performance}.
+I will assess the capacity of NGS to enable irregular refinement by comparing performance of NGS-HyperNEAT variants and HyperNEAT (control) across a spectrum of problem regularities.
 Greater relative performance of NGS-HyperNEAT variants at low problem regularity would confirm that NGS enables irregular refinement.
 I will assess the effect of NGS on evolvability by comparing between NGS and control treatments the phenotypic novelty and viability of mutant offspring of evolved architectures \cite{tarapore2015evolvability}.
-I will compare between NGS and control treatments the performance of architectures evolved to handle one set of bit mirroring symmetries on a bit mirroring problem with different symmetries (a measure of adaptive plasticity).
+To assess adaptive plasticity, I will use NGS and control methods to evolve architectures to handle one set of bit mirroring symmetries and then test performance on a bit mirroring problem with different symmetries.
 Finally, I will compare the effect of parsimony selection pressure on performance and network size between NGS and control treatments.
 I expect NGS to boost parsimony, irregular refinement, evolvability, and adaptive plasticity.
 Comparing performance across four NGS variants will help reveal the most effective formulation of the NGS algorithm.
 
 Next, I will \textbf{assess the performance of NGS-enabled architecture evolution on benchmark deep learning datasets}.
-I will leverage the results of my exploratory experiments to \textbf{seek collaborators in industry} for these benchmarking experiments through preexisting connections my research group has with Sentient Technologies.
+I will leverage the results of my exploratory experiments to \textbf{seek collaborators in industry} for these benchmarking experiments through preexisting connections between my research group and Sentient Technologies.
 These larger-scale experiments will employ the CoDeepNEAT encoding \cite{miikkulainen2017evolving}, a layer-based indirect encoding developed specially to evolve deep learning architectures.
 I will benchmark NGS-CoDeepNEAT against existing results for CoDeepNEAT on datasets for computer vision (CIFAR-10/100) and language modeling (PTB).
 I expect performance to meet or exceed state-of-the-art.
