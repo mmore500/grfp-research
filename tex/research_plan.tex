@@ -10,7 +10,7 @@ To evaluate a candidate solution, the connection weights of the initial architec
 Then, a pruning decision will be made for each network node by comparing a cutoff value (defined by $v$) to a quadratic weighting (also defined by $v$) of the following metrics:
 \begin{enumerate*}[label=(\alph*)]
 \item node activation,
-\item correlation of node activation with activation of afferent nodes,
+\item correlation of node activation with activation of succeeding nodes,
 \item correlation of node activation with loss, and
 \item backpropagation gradient through the node.
 \end{enumerate*}
@@ -59,7 +59,7 @@ I expect NGS to boost parsimony, irregular refinement, evolvability, and adaptiv
 Comparing performance across four NGS variants will reveal the most effective formulation of the NGS algorithm.
 
 Next, I will \textbf{assess the performance of NGS-enabled architecture evolution on benchmark deep learning datasets}.
-I will leverage the results of my exploratory experiments to \textbf{seek collaborators in industry} for these benchmarking experiments through connections between my research group and Sentient.
+I will leverage the results of my exploratory experiments to \textbf{seek collaborators in industry} for these benchmarking experiments through preexisting connections my research group has with Sentient Technologies.
 These experiments will employ the CoDeepNEAT encoding \cite{miikkulainen2017evolving}, a layer-based indirect encoding developed specially to evolve deep learning architectures.
 I will benchmark NGS-CoDeepNEAT against existing results for CoDeepNEAT on datasets for computer vision (CIFAR-10/100) and language modeling (PTB).
 I expect performance to meet or exceed state-of-the-art.
